@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center top;
+            background-repeat: no-repeat;
+            /*background-size: 100% 100%;  resolve porem distorce a imagem*/
+            /*background-size: contain; exibe 100% da iamgem mas cria barras, no caso desse background color, pretas*/
+            background-size: cover; /* não exibe a imagem completa mas não distorce no redimensionamento do navegador*/ 
+        }
+
+        main{
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>
+            Teste de Imagem de Fundo
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sapiente molestiae sint praesentium blanditiis atque excepturi, veniam omnis, debitis dignissimos dolorem adipisci ab? Ipsa adipisci tenetur consequatur pariatur laboriosam fugit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque eum dolorem voluptas dolore, debitis facere nulla ullam deserunt illo, vero repellendus temporibus delectus possimus voluptate, eveniet porro! Perferendis, distinctio ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus quasi voluptatum sapiente maxime amet nesciunt eius repellat labore perspiciatis. Commodi animi asperiores quod at, sed laudantium excepturi alias voluptates.
+        </p>
+    </main>
+</body>
+</html>
