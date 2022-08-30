@@ -31,7 +31,7 @@ header{
 header>h1{
     padding-top: 50px;
     font-variant: small-caps; /*small-caps= é um uppercase com a primeira letra maior*/
-    font-size: 8vw;
+    font-size: 6vw;
 }
 
 header>p{
@@ -50,11 +50,15 @@ header a:hover, footer a:hover{
 
 section{
     padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3vw;
+    font-size: 2.5vw;
+}
+
+section>p{
+    padding-bottom: 2em;
 }
 
 section.normal{
@@ -65,12 +69,25 @@ section.normal{
 section.imagem{
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.712);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem>p{
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.199);
+    background-color: rgba(0, 0, 0, 0.452);
+    text-shadow: 2px 1.5px 0px black;
+}
+
+section#img001{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img002{
+    background-image: url('../imagens/background002.jpg');   
 }
 
 footer{
@@ -78,4 +95,5 @@ footer{
     text-align: center;
     color: white;
     padding: 10px;
+    font-size: 1.5vw;
 }
