@@ -10,6 +10,9 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: lightcyan;
         }
+        h1{
+            padding: 10px 10px 0px 130px;
+        }
 
         table{
             width: 500px;
@@ -29,6 +32,13 @@
             text-align: center;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(158, 154, 154);
+        }
+
         thead, tfoot{
             background-color: rgb(78, 75, 75);
             color: white;
@@ -40,7 +50,8 @@
     <h1>Tabelas Grandes</h1>
     <!--
         HIERARQUIA DE TABELAS Grandes
-        table    
+        table 
+            caption   
             thead
                 tr, td, th
             tbody
@@ -50,11 +61,12 @@
 
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da pop. total</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col" style="width: 90px;">% da pop. total</th>
             </tr>
         </thead>
         <tbody>
@@ -197,7 +209,7 @@
         <!-- Tfoot pode ser colocado em qualquer local do código(não é o ideal) o navegador automaticamente organiza-->
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>213.317.639</strong></td>
             </tr>
         </tfoot>
