@@ -13,7 +13,10 @@
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
-    <form action="cadastro.php" autocomplete="off">  
+
+    <!--metodo padrao do form é get que faz com que o dado da area digitada do form apareça na url // o post não aparece // get utilizado para dados nao sensiveis e links compartilhaveis limite de 3000 bytes // post dados sensiveis porem é melhor https maior q 3000 bytes -->
+    
+    <form action="cadastro.php" method="post" autocomplete="off">  
         <p>
             <label for="inome">
                 Nome:
