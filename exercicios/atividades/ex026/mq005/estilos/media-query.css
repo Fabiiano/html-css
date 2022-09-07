@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*Typical devices breakpoint
+pequenas telas:até 600px
+celular: de 600 até 768
+tablet: de 768 até 992
+desktop: de 992 até 1200
+Grades telas: acima de 1200
+*/
+
+@media screen and (min-width: 768px) {
+    span#burger{
+        display: none;
+    }
+    menu{
+        display: block;        
+    }
+    menu>ul>li{
+        display:inline-block;
+    }
+    menu>ul>li>a{
+        border-radius: 10px;
+        margin: 5px;
+    }
+
+    main{
+        width: 65vw;
+    }
+}
